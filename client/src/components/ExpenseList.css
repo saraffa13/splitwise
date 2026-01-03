@@ -1,0 +1,203 @@
+.expense-list-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.expense-date-group {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.expense-date-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.expense-date-header:hover {
+  background: #e9ecef;
+}
+
+.date-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.date-expense-count {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.accordion-icon {
+  font-size: 0.8rem;
+  color: #666;
+  transition: transform 0.3s;
+  user-select: none;
+}
+
+.accordion-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.expense-date-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.expense-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.expense-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.expense-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.expense-header h4 {
+  color: #333;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.delete-expense-btn,
+.edit-expense-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: background 0.3s;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-expense-btn:hover {
+  background: #c82333;
+}
+
+.edit-expense-btn {
+  background: #667eea;
+  font-size: 1rem;
+}
+
+.edit-expense-btn:hover {
+  background: #5568d3;
+}
+
+.expense-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.expense-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 5px;
+}
+
+.expense-paid-by {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.expense-paid-by strong {
+  color: #333;
+}
+
+.expense-split {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.expense-per-person {
+  color: #28a745;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+.expense-time {
+  color: #999;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.empty-state p {
+  font-size: 1rem;
+}
+

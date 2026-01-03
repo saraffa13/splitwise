@@ -1,0 +1,90 @@
+.balance-display {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.balance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.balance-item:hover {
+  transform: translateX(5px);
+}
+
+.balance-item.clickable:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: translateX(5px) scale(1.02);
+}
+
+.balance-item.positive {
+  background: #d4edda;
+  border-left: 4px solid #28a745;
+}
+
+.balance-item.negative {
+  background: #f8d7da;
+  border-left: 4px solid #dc3545;
+}
+
+.balance-item.zero {
+  background: #e9ecef;
+  border-left: 4px solid #6c757d;
+}
+
+.balance-name {
+  color: #333;
+  font-size: 1rem;
+}
+
+.balance-amount {
+  font-size: 1.1rem;
+}
+
+.balance-item.positive .balance-amount {
+  color: #28a745;
+}
+
+.balance-item.negative .balance-amount {
+  color: #dc3545;
+}
+
+.balance-item.zero .balance-amount {
+  color: #6c757d;
+}
+
+.balance-summary {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.balance-summary p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.summary-text {
+  display: block;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+.empty-state p {
+  font-size: 0.95rem;
+}
+

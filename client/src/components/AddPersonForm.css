@@ -1,0 +1,43 @@
+.add-person-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.person-name-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.person-name-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-person-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.add-person-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.add-person-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
