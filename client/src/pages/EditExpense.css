@@ -1,0 +1,21 @@
+.edit-expense-page {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-card h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .edit-expense-page {
+    padding: 20px;
+  }
+}
+

@@ -50,3 +50,23 @@
   cursor: not-allowed;
 }
 
+@media (max-width: 768px) {
+  .create-project {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .create-project-form {
+    flex-direction: column;
+  }
+
+  .project-name-input {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .create-btn {
+    width: 100%;
+  }
+}
+

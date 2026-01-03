@@ -201,3 +201,40 @@
   font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+  .expense-list-accordion {
+    max-height: none;
+  }
+
+  .expense-date-header {
+    padding: 12px 15px;
+  }
+
+  .date-label {
+    font-size: 1rem;
+  }
+
+  .expense-item {
+    padding: 15px;
+  }
+
+  .expense-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .expense-header h4 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .expense-amount {
+    font-size: 1.3rem;
+  }
+
+  .expense-actions {
+    order: -1;
+    margin-left: auto;
+  }
+}
+

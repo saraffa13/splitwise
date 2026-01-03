@@ -1,0 +1,47 @@
+.add-expense-page {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-card h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.empty-message {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.back-to-people-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  margin: 20px auto;
+}
+
+.back-to-people-btn:hover {
+  background: #764ba2;
+}
+
+@media (max-width: 768px) {
+  .add-expense-page {
+    padding: 20px;
+  }
+}
+

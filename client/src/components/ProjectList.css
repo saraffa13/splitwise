@@ -83,3 +83,36 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 768px) {
+  .project-list {
+    padding: 20px;
+  }
+
+  .project-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .project-list-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .refresh-btn {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+}
+

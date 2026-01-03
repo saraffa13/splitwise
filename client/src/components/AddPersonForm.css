@@ -41,3 +41,18 @@
   cursor: not-allowed;
 }
 
+@media (max-width: 768px) {
+  .add-person-form {
+    flex-direction: column;
+  }
+
+  .person-name-input {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .add-person-btn {
+    width: 100%;
+  }
+}
+

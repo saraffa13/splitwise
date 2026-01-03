@@ -88,3 +88,32 @@
   font-size: 0.95rem;
 }
 
+@media (max-width: 768px) {
+  .balance-item {
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+
+  .balance-name {
+    font-size: 0.95rem;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .balance-amount {
+    font-size: 1rem;
+    width: 100%;
+    text-align: right;
+  }
+
+  .balance-summary {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  .summary-text {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+

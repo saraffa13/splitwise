@@ -16,25 +16,7 @@ body {
 
 .App {
   min-height: 100vh;
-  padding: 20px;
-}
-
-.App-header {
-  text-align: center;
-  color: white;
-  margin-bottom: 30px;
-  padding: 20px;
-}
-
-.App-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.App-header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+  padding: 10px;
 }
 
 .App-main {
@@ -56,4 +38,21 @@ body {
   padding: 20px;
   border-radius: 8px;
   margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 5px;
+  }
+
+  .loading {
+    font-size: 1.2rem;
+    padding: 30px 20px;
+  }
+
+  .error {
+    padding: 15px;
+    margin: 10px;
+    font-size: 0.9rem;
+  }
 }

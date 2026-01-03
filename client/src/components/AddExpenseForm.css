@@ -176,3 +176,33 @@
   cursor: not-allowed;
 }
 
+@media (max-width: 768px) {
+  .add-expense-form {
+    gap: 15px;
+  }
+
+  .split-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .split-buttons {
+    width: 100%;
+  }
+
+  .select-all-btn,
+  .select-first-three-btn {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .submit-expense-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}
+
